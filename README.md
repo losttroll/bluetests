@@ -1,5 +1,5 @@
-# runcalc
-Just some basic scripts for testing SIEM alerts
+# siemtest
+Just some basic scripts and files for testing SIEM alerts and security logs
 
 
 # Invoke-Expression
